@@ -5,7 +5,7 @@
   "height": 400,
   "projection": {"type": "equalEarth"},
   "data": {
-    "url": "https://raw.githubusercontent.com/GarnetTanWeiHong/Homework_9/main/js/ne_110m_admin_0_countries.topojson",
+    "url": "https://raw.githubusercontent.com/GarnetTanWeiHong/Homework_9/main/ne_110m_admin_0_countries.topojson",
     "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
   },
   "transform": [
@@ -13,13 +13,13 @@
       "lookup": "properties.NAME",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/GarnetTanWeiHong/Homework_9/main/data/pl_20-21.csv"
+          "url": "https://raw.githubusercontent.com/GarnetTanWeiHong/Homework_9/main/pl_20-21.csv"
         },
         "key": "NAME",
         "fields": ["Nationality"]
       }
     },
-    {"calculate": "datum.Active + 0.1", "as": "Active Cases"}
+    {"calculate": "2", "as": "Active Cases"}
   ],
   "mark": {"type": "geoshape"},
   "encoding": {
